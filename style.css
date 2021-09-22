@@ -1,0 +1,61 @@
+body {
+  align-items: center;
+  justify-content: center;
+  cursor: url("mouse.png"), default;
+}
+
+#btn_area {
+  width: 300px;
+  padding-right: 60px;
+  justify-content: space-around;
+  position: fixed;
+  margin: 350px 600px;
+}
+
+#music_bar {
+  width: 400px;
+  margin: 400px 600px;
+  position: fixed;
+}
+.btn {
+  justify-content: center;
+  background-color: orange;
+  font-family: "San-serif";
+  font-weight: 800;
+  padding: 6px;
+  border-radius: 50%;
+  border-color: black;
+  border-width: 2px;
+}
+
+.slider {
+  cursor: url("mouse.png"), default;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #fff1cb;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 34px;
+  border-radius: 20%;
+  background: url("cheese.png");
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 34px;
+  border-radius: 20%;
+  background: url("cheese.png");
+  cursor: pointer;
+}
+.slider:hover {
+  cursor: url("mouse.png"), default;
+}

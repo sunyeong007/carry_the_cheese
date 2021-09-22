@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>치즈를 옮기는 생쥐</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  
+
+</head>
+<body>
+  <div id="btn_area">
+    <button class="btn" id="musicBut">Music</button>
+    <button class="btn" id="stopBut">stop</button>
+  </div>
+  <div id="music_bar">
+    <input id="vol" type="range" min="0" max="100" value="20" class="slider">
+    <audio id="cancanSnd" src="cancan.mp3"></audio>
+  </div>
+  
+
+  <script type="text/javascript">
+    //vol.value = 20;
+    vol.oninput = function(){
+        cancanSnd.volume = vol.value/100;
+    }
+    // oninput은 그때그때 값을 부드럽게 바꿔주는 역할 함
+    musicBut.onclick = function(){
+        cancanSnd.play();
+        //cancanSnd.controls=true;
+    }
+    
+    stopBut.onclick = function(){
+        cancanSnd.pause();
+    }
+</script>
+
+
+  <script src="./script.js"></script>
+  <script src="./script2.js"></script>
+  
+  
+    
+
+    
+</body>
+</html>
